@@ -3191,14 +3191,14 @@ ol.steps {
 	counter-reset: steps;
 }
 
-ol.steps li {
+ol.steps > li {
 	display: flex;
 	flex-direction: row;
 	align-items: start;
 	list-style-type: none;
 }
 
-ol.steps li::before {
+ol.steps > li::before {
 	counter-increment: steps;
 	content: "Schritt " counter(steps) ":";
 	margin-right: 1rem;
